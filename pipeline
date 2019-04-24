@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-      node {label 'python'}
-    }
+    agent any
     environment {
     APPLICATION_NAME = 'python-nginx'
     GIT_REPO="http://github.com/ruddra/openshift-python-nginx.git"
